@@ -4,13 +4,12 @@ import './App.css';
 import {Header} from "./site/Header";
 import {Body} from "./site/Body";
 import {Footer} from "./site/Footer";
+import {IndexSite} from "./site/indexSite";
 
 function App() {
     return (
         <>
-            <Header title={"NEW BODY"}/>
-            <Body titleForBody={"NEW BODY"}/>
-            <Footer titleForFooter={"NEW FOOTER"} />
+            <IndexSite/>
         </>
     )
 }
