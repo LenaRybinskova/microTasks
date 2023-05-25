@@ -7,11 +7,12 @@ import {Footer} from "./01_01_Type/Footer";
 import {IndexSite} from "./01_01_Type/indexSite";
 import {NewComponent} from "./01_02_map/NewComponent";
 import AppNewComponents from "./01_02_map/AppNewComponents";
+import {Button} from "./01_03_button/Button";
 
 function App() {
     return (
         <>
-            <AppNewComponents/>
+            <Button/>
         </>
     )
 }
