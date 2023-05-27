@@ -2,7 +2,7 @@ import React from "react";
 
 type NewComponentType = {
     currentMoney: MoneyTypes[]
-    onClickFilterHandler: (nameButton: FilterType) => void
+    callback: (nameButton: FilterType) => void
 }
 
 type MoneyTypes = {
@@ -14,7 +14,6 @@ type MoneyTypes = {
 type FilterType = "all" | "dollar" | "ruble"
 
 export const NewComponent = (props: NewComponentType) => {
-    debugger
     return (
         <div>
             <ul>
@@ -29,9 +28,9 @@ export const NewComponent = (props: NewComponentType) => {
                 })}
             </ul>
             <div style={{marginLeft: "35px"}}>
-                <button onClick={() => props.onClickFilterHandler("all")}>all</button>
-                <button onClick={() => props.onClickFilterHandler("ruble")}>ruble</button>
-                <button onClick={() => props.onClickFilterHandler("dollar")}>dollar</button>
+                <button onClick={() => props.callback("all")}>all</button>
+                <button onClick={() => props.callback("ruble")}>ruble</button>
+                <button onClick={() => props.callback("dollar")}>dollar</button>
             </div>
         </div>
     )

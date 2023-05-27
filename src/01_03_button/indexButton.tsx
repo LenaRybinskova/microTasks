@@ -18,6 +18,6 @@ export const IndexButton = () => {
         <>
             <Button name={"MyYoutubeChannel-1"} callBack={() => Button1Foo("Vasya", 21)}/>
             <Button name={"MyYoutubeChannel-2"} callBack={() => Button2Foo("Ivan")}/>
-            <Button name={"MyYoutubeChannel-3"} callBack={Button3Foo}/>
+            <Button name={"stuped button"} callBack={Button3Foo}/>
         </>)
 }

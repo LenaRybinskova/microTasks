@@ -24,7 +24,7 @@ const IndexFilter = () => {
         currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === "ruble")
     }
 
-// в стейт передаем dollar ruble или all, на какой был клик
+// в стейт filter передаем dollar ruble или all, на какой был клик
     const onClickFilterHandler = (nameButton: FilterType) => {
         setFilter(nameButton)
     }
@@ -32,7 +32,7 @@ const IndexFilter = () => {
 
     return (
         <>
-            <NewComponent currentMoney={currentMoney} onClickFilterHandler={onClickFilterHandler}/>
+            <NewComponent currentMoney={currentMoney} callback={onClickFilterHandler}/>
             {/*<ul>*/}
             {/*    {currentMoney.map((objFromMoneyArr, index) => {*/}
             {/*        return (*/}
